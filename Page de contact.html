@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aller au Cinéma</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e88e5;
+			position: sticky;
+			top: 0;
+			z-index: 1000;
+			backdrop-filter: blur(10px);
+            padding: 20px 10%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1565c0;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+        }
+		
+		      section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+		
+		 /* Style pour le footer */
+        footer {
+            background-color: #1e88e5;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+		
+		/* Style de la bande passante */
+        .marquee-container {
+            background-color: #333;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        marquee {
+            font-weight: bold;
+            font-size: 24px;
+        }
+		
+		   /* Section Formulaire de Contact */
+.contact-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f4f6f9;
+    color: #34495e;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.contact-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.contact-section p {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2980b9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+}
+
+.submit-button {
+    background: #2980b9;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+    background: #1c5983;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Bande passante avec le message de bienvenue -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            Bienvenue dans le monde fascinant du cinéma qui est notre loisir !
+        </marquee>
+    </div>
+	
+    <header>
+        <div class="logo">Loisir</div>
+        <nav>
+		<h4>
+            <a href="Site Loisir Ossebi.html">Accueil</a>
+            <a href="#contact">Contact</a>
+			</h4>
+        </nav>
+    </header>
+	
+  <!-- Section Formulaire de Contact -->
+    <section class="contact-section">
+        <h2>Contactez-nous</h2>
+        <p>Vous avez une question ? Remplissez le formulaire ci-dessous.</p>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Entrez votre nom" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" placeholder="Entrez votre message" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Envoyer</button>
+        </form>
+    </section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Le Loisir d'Aller au Cinéma. Tous droits réservés.</p>
+    <p>Contactez-nous : contact@cinema.com</p>
+</footer>
+
+</body>
+</html>

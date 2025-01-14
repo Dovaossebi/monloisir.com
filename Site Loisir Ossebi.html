@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aller au Cinéma</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1e88e5;
+			position: sticky;
+			top: 0;
+			z-index: 1000;
+			backdrop-filter: blur(10px);
+            padding: 20px 10%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #1565c0;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.5em;
+            }
+
+            nav a {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+        }
+		
+		      section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .container {
+            display: flex; /* Utilisation de flexbox pour l'alignement horizontal */
+            gap: 20px;    /* Espacement entre les éléments */
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .media-container {
+            display: flex; /* Flexbox pour les éléments à l'intérieur du conteneur */
+            justify-content: space-between; /* Aligner horizontalement avec un espace égal */
+            gap: 20px; /* Espace entre les images */
+        }
+        img {
+            width: 30%; /* Largeur des images à 60% */
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        video {
+            width: 100w%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+		
+		 /* Style pour le footer */
+        footer {
+            background-color: #1e88e5;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+		
+		/* Style de la bande passante */
+        .marquee-container {
+            background-color: #333;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        marquee {
+            font-weight: bold;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bande passante avec le message de bienvenue -->
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+            Bienvenue dans le monde fascinant du cinéma qui est notre loisir !
+        </marquee>
+    </div>
+	
+    <header>
+        <div class="logo">Loisir</div>
+        <nav>
+		<h4>
+            <a href="#accueil">Accueil</a>
+            <a href="page de contact.html">Contact</a>
+			</h4>
+        </nav>
+    </header>
+	
+	<section>
+    <h2>Une Expérience Sensorielle Unique</h2>
+    <p>Aller au cinéma est un loisir qui permet non seulement de s'évader du quotidien, mais aussi de vivre des émotions fortes et de découvrir des univers fascinants et imaginaires. C'est un moment privilégié où l'on peut s'immerger dans des récits captivants, qu'ils soient d'aventure, de drame, de science-fiction ou de comédie, et laisser les histoires prendre vie sous nos yeux. Au Togo, l'une de mes destinations préférées pour vivre cette expérience unique est le cinéma CanalOlympia, un lieu où les films prennent une toute nouvelle dimension, alliant confort et technologie de pointe. C’est un endroit où je peux non seulement apprécier un film, mais aussi me détendre, me divertir et m'évader loin des préoccupations quotidiennes.</p>
+
+    <div class="container">
+        <!-- Premier container pour les images -->
+        <div class="media-container">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/db/db/30/scene-exterieure-canalolympia.jpg?w=900&h=500&s=1" alt="La salle de cinéma">
+            <img src="https://www.canalolympia.com/wp-content/uploads/2020/06/917108d4-9b9b-46a6-97c6-8d062ed0128a.jpg" alt="Salle de cinéma pleine de spectateurs">
+            <img src="https://weezevent.com/wp-content/uploads/2023/07/24160322/organiser-projection-film.jpg" alt="Projection d'un film sur grand écran">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Un Loisir Social et Convivial</h2>
+    <p>Aller au cinéma est aussi une activité sociale. C'est l'occasion de partager des moments agréables avec des amis ou des proches. La sortie cinéma est souvent suivie d'une discussion passionnée sur le film que l'on vient de voir. Cette interaction sociale fait du cinéma une activité qui va au-delà du simple divertissement, en créant des souvenirs communs et des moments de complicité.</p>
+
+    <div class="container">
+        <!-- Premier container pour les images -->
+        <div class="media-container">
+            <img src="https://st4.depositphotos.com/10614052/23789/i/450/depositphotos_237896016-stock-photo-friends-watching-movie-cinema.jpg" alt="Groupe d'amis discutant après une séance de cinéma">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/30I7r-KA0fU?si=qVP90OKWudeEgcNB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <img src="https://media.gettyimages.com/id/1363352866/fr/photo/amis-appr%C3%A9ciant-un-film-de-com%C3%A9die-au-cin%C3%A9ma.jpg?s=612x612&w=gi&k=20&c=fB920zGlN7AXPO5ZqQ1WoYF-VsL1TQXurXS_Y9ysp30=" alt="Salle de cinéma avec des spectateurs enthousiastes">
+        </div>
+
+       
+</section>
+
+<section>
+    <h2>Des Films pour Tous les Goûts</h2>
+    <p>Le cinéma propose une diversité de films, des blockbusters aux films d’auteur. Chaque spectateur peut y trouver quelque chose qui lui plaît, et chaque expérience cinématographique est unique.</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Le Loisir d'Aller au Cinéma. Tous droits réservés.</p>
+    <p>Contactez-nous : contact@cinema.com</p>
+</footer>
+
+</body>
+</html>
